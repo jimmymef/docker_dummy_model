@@ -19,3 +19,6 @@ http://0.0.0.0:5001/make_prediction
     "name": "Leanne Perry",
     "gender": "female"  
 }
+
+## GITHUB repo
+https://github.com/jimmymef/docker_dummy_model
