@@ -47,7 +47,7 @@ def hello():
 @app.post("/validate_data")
 async def validate_data(data_: Data_Model):
     funx = Datafuncs()
-    validation = funx.validate_data()
+    validation = funx.validate_data(data_)
     logger.info("New data validation")
     return {"message": "Data was validated. All Good!", "valid" : validation}
 

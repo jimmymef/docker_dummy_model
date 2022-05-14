@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  dummy_model_api:
+    build: .
+    image: dummy_model_image
+    command: uvicorn main:app --reload --workers 1 --host 0.0.0.0 --port 8001
+    ports:
+      - 5001:8001
+    networks:
+      - test_network
+    
+networks:
+  test_network:
+    driver: bridge
